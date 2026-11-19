@@ -1,0 +1,269 @@
+.tarjeta {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 12px 16px;
+  text-align: left;
+  flex: 0 1 220px;
+}
+
+.cont {
+  display: flex;
+  gap: 10px;
+  justify-content: center
+}
+
+.contador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 480px;
+  margin: 24px auto;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.numero {
+  font-size: 48px;
+  font-weight: bold;
+  align-self: flex-start;
+  color: var(--text-h);
+  margin: 0;
+}
+
+.contador-botones {
+  display: flex;
+  gap: 8px;
+}
+
+.contador-botones .boton {
+  margin: 0;
+}
+
+.boton {
+  background-color: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.2s;
+}
+
+.boton:hover {
+  background-color: var(--accent-border);
+}
+
+.boton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.boton:disabled:hover {
+  background-color: var(--accent-bg);
+}
+
+.mensaje {
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  color: var(--accent);
+  border-color: var(--accent-border);
+  align-self: flex-start;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 480px;
+  margin: 24px auto;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.faq-pregunta {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-h);
+}
+
+.faq .boton {
+  margin: 0;
+}
+
+.faq-respuesta {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.calculador {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 320px;
+  margin: 24px auto;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.calculador-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: var(--text-h);
+  background-color: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.calculador-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.calculador-resultado {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text-h);
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  margin: 24px auto;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.lista-form {
+  display: flex;
+  gap: 8px;
+}
+
+.lista-input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: var(--text-h);
+  background-color: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.lista-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.lista-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lista-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-h);
+}
+
+.lista-item .boton,
+.lista-form .boton {
+  margin: 0;
+}
+
+.lista-item .boton {
+  padding: 4px 10px;
+  font-size: 14px;
+}
+
+.lista-vacia {
+  margin: 0;
+  text-align: center;
+}
+
+.buscador {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 24px auto;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.buscador-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: var(--text-h);
+  background-color: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.buscador-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.buscador-cantidad {
+  margin: 0;
+  font-size: 14px;
+}
+
+.buscador-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.buscador-item {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent);
+  background-color: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 8px;
+}
+
